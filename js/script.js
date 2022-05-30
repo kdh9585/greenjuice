@@ -1,5 +1,16 @@
 $(document).ready(function () {
+    // 모달창
+    let modal_close = $('.modal-close');
+    let modal = $('.modal-wrap');
 
+    modal_close.click(function(){
+        modal.hide();
+    });
+
+    let modal_bt = $('.modal-bt');
+    modal_bt.click(function(){
+        modal.show();
+    });
     // 펼침기능
     let link_list = $('.link-list');
     let link_bt = $('.link-bt');
